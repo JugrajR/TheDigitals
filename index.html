@@ -12,11 +12,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             margin: 0;
-            overflow: hidden;
-            //background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/02/Television_static.gif');
-            //background-size: cover;
+            overflow-y: scroll;
         }
 
         /* Title Style */
@@ -419,8 +416,10 @@
 
         document.addEventListener('DOMContentLoaded', function () {
             const songs = [
-                { id: 'audio1', src: 'Digital Slave 5.wav', title: 'Digital Slave' },
-                { id: 'audio2', src: '17 mix 6.wav', title: '17' },
+                { id: 'audio1', src: 'Digital Slave 5.wav', title: 'digital slave' },
+                { id: 'audio2', src: 'punk rock robot - mix 3 .wav', title: 'punk rock robot' },
+                { id: 'audio3', src: '17 mix 6.wav', title: 'yesterday' },
+                { id: 'audio4', src: 'artsstar mix 2.wav', title: 'art star - yeahyeahyeahs cover' },
             ];
 
             const audioPlayerContainer = document.querySelector('.audio-player');
